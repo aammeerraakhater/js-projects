@@ -14,20 +14,25 @@ function setQuery(evt) {
 async function checkWeather(city){
 
   const response = await fetch(APIURL + city + `&appid=${APIkey}`) ;
-  var data = await response.json();
 
-  console.log(data);
+  if(response.status==404){
+    document.querySelector(".city").innerHTML= "Invalid city";
+    document.querySelector(".current").style.display = "none"
+  }else{
+    var data = await response.json();
+    console.log(data);
 
+    document.querySelector(".current").style.display = "block"
+    document.querySelector(".city").innerHTML= data.name;
+    document.querySelector(".temp").innerHTML= Math.round(data.main.temp)+ "°c";
+    document.querySelector(".humidity").innerHTML= data.main.humidity + "%";
+    document.querySelector(".hi-low").innerHTML= Math.round(data.main.temp_max) + "°c / " + Math.round(data.main.temp_min) + "°c";
+    document.querySelector(".windSpeed").innerHTML= data.wind.speed + "Km/hr";
+
+  }
   let now = new Date();
   let date = document.querySelector('.location .date');
   date.innerText = dateBuilder(now);
-  
-  document.querySelector(".city").innerHTML= data.name;
-  document.querySelector(".temp").innerHTML= Math.round(data.main.temp)+ "°c";
-  document.querySelector(".humidity").innerHTML= data.main.humidity + "%";
-  document.querySelector(".hi-low").innerHTML= Math.round(data.main.temp_max) + "°c / " + Math.round(data.main.temp_min) + "°c";
-  document.querySelector(".windSpeed").innerHTML= data.wind.speed + "Km/hr";
-  
 }
 function dateBuilder (d) {
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
