@@ -1,0 +1,74 @@
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}  
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--DarkBlue);
+    font-size: 28px;
+}
+.advice{
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 15px;
+    padding:20px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+.adviceNum{
+    color:var(--NeonGreen);
+    font-size: 15px;
+}
+.advice q{
+    color:var(--LightCyan);
+}
+.divisor{
+    width: 90%;
+    height: 16px;
+    margin: 0 auto;
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dice{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto ;
+    bottom: -20;
+    background-color: var(--NeonGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(80%);
+}
+.dice :hover{
+    box-shadow: var(--NeonGreen) 10px 15px 100px 15px;
+        cursor: pointer;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width :768px){ 
+    .advice{
+        width:80%;
+    }
+    .divisor{
+        background-image: url(images/pattern-divider-mobile.svg);
+    }
+   
+}
