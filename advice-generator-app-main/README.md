@@ -51,6 +51,11 @@ in js i learned the usage of addEventListener
 
 To see how you can add code snippets, see below:
 
+1. :root in CSS:
+   - Use meaningful variable names and comment your code to improve readability.
+   - Group related variables together to make it easier to manage and maintain.
+   - Avoid using excessive global variables and prefer scoping variables to specific components or sections of your CSS.
+
 ```css
 :root {
   --LightCyan: hsl(193, 38%, 86%);
@@ -69,6 +74,11 @@ div {
   transform: translateY(50%);
 }
 ```
+
+2. Using addEventListener in JavaScript:
+   - Use descriptive event names and function names to improve code readability.
+   - Consider using event delegation to handle events on multiple elements efficiently.
+   - Use the addEventListener method to attach events instead of inline event handlers.
 
 ```js
 rollDice.addEventListener("click", setQuery);
