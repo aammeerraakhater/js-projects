@@ -17,4 +17,4 @@ Images:<br><br>
 - Notes app
   ![Notes app](image-2.png)
 - Qr generator app
-  ![Qr generator app](image-5.png)
+  ![Qr generator app](image-4.png)
