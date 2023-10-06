@@ -1,8 +1,8 @@
 In this repo I'm recording my learning curve to learn js, while building simple projects till eventually mastering this✨🎃
 <br>
 Projects done:<br><br>
-📌Simple Weather App<br>
-📌Advice generator app<br>
+📌Simple Weather App (API)<br>
+📌Advice generator app (API)<br>
 📌To-do list<br>
 📌Note app<br>
 Images:<br><br>
