@@ -1,0 +1,67 @@
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --TropicalIndiago:#9198e5;
+} 
+body{
+    font-family: 'Manrope', sans-serif;
+    background: var(--DarkBlue);
+    font-size: 18px;
+    color:var(--DarkBlue);
+}
+.noteList{
+    background: linear-gradient(135deg,var(--TropicalIndiago),var(--TropicalIndiago), var(--DarkGrayishBlue));
+    border-radius: 15px;
+    padding:25px;
+    max-width: 85%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.addBtn{
+    width: 20%;
+    height: 40px;
+    font-size: 22px;
+    background-color: var(--NeonGreen);
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    color:white;
+    cursor:pointer;
+}
+.input-box{
+    position: relative;
+    background-color: var(--LightCyan);
+    min-height: 50px;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 25px;
+    border: none;
+    outline: none;
+    width: 50%;
+}
+.deleteImg{
+    position: absolute;
+    right: 0;
+    bottom:5px;
+    width:20px;
+    height:20px;
+    color:#555;
+    margin-right: 15px;
+    cursor: pointer;
+}
+    @media screen and (max-width :768px){ 
+    .noteList{
+        width:80%;
+    }
+    .addBtn{
+        width:70%
+    }
+    .input-box{
+        width:80%
+    }
+}
