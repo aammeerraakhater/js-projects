@@ -1,0 +1,33 @@
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+} 
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--DarkBlue);
+    font-size: 18px;
+}
+.container{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.firstList, .secondList{
+    width:350px;
+    height:250px;
+    background: var(--NeonGreen);
+    padding:20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.list{
+    padding:10px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor:pointer;
+}
