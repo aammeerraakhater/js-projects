@@ -1,4 +1,4 @@
-# To-do list app
+# Drag and drop app
 
 ## Table of contents
 
