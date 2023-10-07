@@ -39,12 +39,15 @@ To learn and absorb new js concepts
 - CSS custom properties
 - JS
 
-<!-- ### What I learned
+### What I learned
 
 This is a snippet of the things I learnt today building this To-do app:
 To see how you can add code snippets, see below:
 
-- Gives the perfect alignment between the input box and btn -->
+difference between getElementById and getElementsByClassName:
+
+- getElementsByClassName: returns a collection (an HTMLCollection, which is "an array-like object"), because there may be multiple elements with that class name. A collection has no innerHTML property. You would have to iterate over each element in the collection using a loop.
+- JavaScript getElementById() Method: This method returns the element that has the ID attribute with the specified value. It is the most used HTML DOM method to manipulate, or get info from, an element on your document.
 
 ### Continued development
 
