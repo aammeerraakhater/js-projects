@@ -6,6 +6,7 @@ Projects done:<br><br>
 📌To-do list<br>
 📌Note app<br>
 📌Qr generator App<br>
+📌Drag and drop<br>
 Images:<br><br>
 
 - Simple weather app
